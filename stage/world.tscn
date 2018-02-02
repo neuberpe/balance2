@@ -1,25 +1,40 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/ball.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/bar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/ice_spawner.tscn" type="PackedScene" id=3]
-[ext_resource path="res://sprite/background.png" type="Texture" id=4]
+[ext_resource path="res://scripts/bonus_spawner.gd" type="Script" id=4]
+[ext_resource path="res://sprite/background.png" type="Texture" id=5]
+[ext_resource path="res://scenes/score.tscn" type="PackedScene" id=6]
 
 [node name="world" type="Node" index="0"]
 
 [node name="ball" parent="." index="0" instance=ExtResource( 1 )]
 
+z_index = 10
+_sections_unfolded = [ "Transform", "Z Index" ]
+
 [node name="bar" parent="." index="1" instance=ExtResource( 2 )]
+
+z_index = 10
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="ice_spawner" parent="." index="2" instance=ExtResource( 3 )]
 
 cooldown = 2.0
 
-[node name="background" type="Sprite" parent="." index="3"]
+[node name="bonus_spawner" type="Node" parent="." index="3"]
+
+script = ExtResource( 4 )
+cooldown = 10.0
+
+[node name="background" type="Sprite" parent="." index="4"]
 
 z_index = -5
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 centered = false
 _sections_unfolded = [ "Offset", "Z Index" ]
+
+[node name="score" parent="." index="5" instance=ExtResource( 6 )]
 
 
