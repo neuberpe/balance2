@@ -1,7 +1,5 @@
 extends RigidBody2D
 
-
-
 func _ready():
 	add_to_group("bonus")
 	set_contact_monitor(true)
@@ -11,5 +9,5 @@ func _ready():
 
 func _on_body_enter(other):
 	if other.is_in_group("player"):
-		get_parent().points += 10
+		global.points += 10
 		queue_free()

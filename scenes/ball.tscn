@@ -43,4 +43,9 @@ texture = ExtResource( 2 )
 
 shape = SubResource( 1 )
 
+[node name="visibility" type="VisibilityNotifier2D" parent="." index="2"]
+
+rect = Rect2( -10, -10, 20, 20 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
 

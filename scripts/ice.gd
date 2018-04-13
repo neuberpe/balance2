@@ -7,5 +7,4 @@ func _ready():
 	connect("body_entered", self, "_on_body_enter")
 
 func _on_body_enter(other):
-	print(other.get_name())
 	queue_free()

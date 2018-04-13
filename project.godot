@@ -11,8 +11,12 @@ config_version=3
 [application]
 
 config/name="Balance 2"
-run/main_scene="res://stage/world.tscn"
+run/main_scene="res://stage/menu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://scripts/global.gd"
 
 [display]
 

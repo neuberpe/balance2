@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/lily.ogg-dfc3783bb240e3e958ca2ef506247986.oggstr"
+
+[deps]
+
+source_file="res://sounds/lily.ogg"
+source_md5="3dd57cb40e15a2e79eafd566a104fb44"
+
+dest_files=[ "res://.import/lily.ogg-dfc3783bb240e3e958ca2ef506247986.oggstr" ]
+dest_md5="c1875413e0aac5beb349066410e7dad9"
+
+[params]
+
+loop=true
+loop_offset=0

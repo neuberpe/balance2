@@ -7,5 +7,5 @@ func _ready():
 	pass
 	
 func _process(delta):
-	score = get_node("../bonus_spawner").points
+	score = global.points
 	set_text(str(score))

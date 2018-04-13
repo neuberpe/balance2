@@ -3,7 +3,6 @@ extends Node
 const boon = preload("res://scenes/bonus.tscn")
 var counter = 0
 export var cooldown = 3.0
-var points = 0
 
 func _ready():
 	spawn()
